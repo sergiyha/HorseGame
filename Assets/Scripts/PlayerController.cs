@@ -19,6 +19,10 @@ public class PlayerController : MonoBehaviour
     private float minSwipeDistY = 20f;
     private float minSwipeDistX_Jump = 20f;
 
+  public  bool enableJumpAnimation;
+
+
+
     void Start()
     {
         defaultPosition = transform.position.y;
@@ -72,6 +76,7 @@ public class PlayerController : MonoBehaviour
                         float swipeValue = Mathf.Sign(touch.position.y - startPos.y);
                         if (swipeValue > 0 && !isTouch && Grounded())
                         {
+                            enableJumpAnimation = true;
                             rb.velocity = new Vector3(0, rb.velocity.y + jumpSpeed, 0);
                             isTouch = true;
                         }

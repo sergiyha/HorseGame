@@ -6,8 +6,9 @@ public class Settings : MonoBehaviour{
 
 	void Start () {
 #if UNITY_ANDROID
-        
-                Application.targetFrameRate = 300;
+       
+
+        Application.targetFrameRate = 300;
 
                 QualitySettings.vSyncCount = 0; 
 
