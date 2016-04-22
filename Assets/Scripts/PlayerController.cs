@@ -16,8 +16,10 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 startPos;
     private bool isTouch;
-    private float minSwipeDistY = 20f;
-    private float minSwipeDistX_Jump = 20f;
+    private float minSwipeDistY = 40f;
+    private float minSwipeDistX_Jump = 30f;
+
+    private float timeToNextJump;
 
   public  bool enableJumpAnimation;
 
@@ -26,16 +28,17 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         defaultPosition = transform.position.y;
-        rb = GetComponent<Rigidbody>();
+       // rb = GetComponent<Rigidbody>();
         lengthOfLine = new Vector3(0f, -0.5f, 0.0f);
-    }
+        timeToNextJump = 0f;
+}
 
     void FixedUpdate()
     {
-        if (transform.position.y > defaultPosition)
-            rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y - gravity * Time.fixedDeltaTime, rb.velocity.z);
-        if (transform.position.y < defaultPosition)
-            transform.position = new Vector3(transform.position.x, defaultPosition, transform.position.z);
+      //  if (transform.position.y > defaultPosition)
+          //  rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y - gravity * Time.fixedDeltaTime, rb.velocity.z);
+    //    if (transform.position.y < defaultPosition)
+          //  transform.position = new Vector3(transform.position.x, defaultPosition, transform.position.z);
 
     }
 
@@ -71,13 +74,14 @@ public class PlayerController : MonoBehaviour
                     }*/
 
                     //add swipe to up
-                    if (swipeDistVertical > minSwipeDistY && swipeDistHorizontal<minSwipeDistX_Jump)
+                    if (swipeDistVertical > minSwipeDistY && swipeDistHorizontal<minSwipeDistX_Jump && Time.time > timeToNextJump)
                     {
+                        timeToNextJump = Time.time + 1.20f;
                         float swipeValue = Mathf.Sign(touch.position.y - startPos.y);
                         if (swipeValue > 0 && !isTouch && Grounded())
                         {
                             enableJumpAnimation = true;
-                            rb.velocity = new Vector3(0, rb.velocity.y + jumpSpeed, 0);
+                           // rb.velocity = new Vector3(0, rb.velocity.y + jumpSpeed, 0);
                             isTouch = true;
                         }
                     }
