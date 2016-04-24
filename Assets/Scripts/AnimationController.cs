@@ -5,6 +5,7 @@ public class AnimationController : MonoBehaviour
 {
     public Animator animator;
     private PlayerController playerController;
+    public Transform horseCollider;
 
 
 
@@ -19,6 +20,9 @@ public class AnimationController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.position = horseCollider.position;
+       transform.rotation = Quaternion.Euler(-horseCollider.eulerAngles.z,transform.eulerAngles.y, transform.eulerAngles.z);
+        
         if (playerController.enableJumpAnimation)
         {
             animator.SetTrigger("Up");

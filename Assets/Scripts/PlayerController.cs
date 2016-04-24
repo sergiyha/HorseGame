@@ -28,17 +28,17 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         defaultPosition = transform.position.y;
-       // rb = GetComponent<Rigidbody>();
+       rb = GetComponent<Rigidbody>();
         lengthOfLine = new Vector3(0f, -0.5f, 0.0f);
         timeToNextJump = 0f;
 }
 
     void FixedUpdate()
     {
-      //  if (transform.position.y > defaultPosition)
-          //  rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y - gravity * Time.fixedDeltaTime, rb.velocity.z);
-    //    if (transform.position.y < defaultPosition)
-          //  transform.position = new Vector3(transform.position.x, defaultPosition, transform.position.z);
+       // if (transform.position.y > defaultPosition)
+          rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y - gravity * Time.fixedDeltaTime, rb.velocity.z);
+      // if (transform.position.y < defaultPosition)
+           // transform.position = new Vector3(transform.position.x, defaultPosition, transform.position.z);
 
     }
 
@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
                 case TouchPhase.Moved:
                     float swipeDistHorizontal = (new Vector3(touch.position.x, 0, 0) - new Vector3(startPos.x, 0, 0)).magnitude;
                     float swipeDistVertical = (new Vector3(0, touch.position.y, 0) - new Vector3(0, startPos.y, 0)).magnitude;
-                    /*if (swipeDistHorizontal > minSwipeDistX)
+                   /* if (swipeDistHorizontal > minSwipeDistX)
                     {
                         float swipeValue = Mathf.Sign(touch.position.x - startPos.x);
                         if (swipeValue > 0 && !isTouch)//to right swipe
@@ -74,14 +74,21 @@ public class PlayerController : MonoBehaviour
                     }*/
 
                     //add swipe to up
-                    if (swipeDistVertical > minSwipeDistY && swipeDistHorizontal<minSwipeDistX_Jump && Time.time > timeToNextJump)
+                    if (swipeDistVertical > minSwipeDistY && swipeDistHorizontal<minSwipeDistX_Jump )
                     {
-                        timeToNextJump = Time.time + 1.20f;
+                        
                         float swipeValue = Mathf.Sign(touch.position.y - startPos.y);
-                        if (swipeValue > 0 && !isTouch && Grounded())
+                        if (swipeValue < 0 && !isTouch && !Grounded())
                         {
+                            timeToNextJump = Time.time;
+                            rb.velocity = new Vector3(0, rb.velocity.y - jumpSpeed, 0);
+                            isTouch = true;
+                        }
+                        if (swipeValue > 0 && !isTouch && Grounded()&& Time.time > timeToNextJump)
+                        {
+                            timeToNextJump = Time.time + 1.20f;
                             enableJumpAnimation = true;
-                           // rb.velocity = new Vector3(0, rb.velocity.y + jumpSpeed, 0);
+                            rb.velocity = new Vector3(0, rb.velocity.y + jumpSpeed, 0);
                             isTouch = true;
                         }
                     }
