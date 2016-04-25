@@ -17,6 +17,8 @@ ModelImporter:
     3300002: terrain_geo2
     4300000: terrain_geo2
     4300002: jump_obstacle2
+    6400000: jump_obstacle2
+    6400002: terrain_geo2
   materials:
     importMaterials: 1
     materialName: 0
