@@ -9,7 +9,9 @@ public class ShootController : MonoBehaviour
     public float spearSpeed;
 
     private int LogicPlane;
-    private int LogicPlaneMask;
+    public int LogicPlaneMask;
+    public int LogicPlaneStartSwipe;
+    public int LogicPlaneStartSwipeMask;
 
     private Ray ray;
     private RaycastHit hitInfo;
@@ -19,17 +21,23 @@ public class ShootController : MonoBehaviour
 
     private bool flying;
     private bool rayHitLogicPlane;
+    private bool spearCanBeReleased;
+    
 
     private GameObject instantiatedSpear;
+    public PlayerController playerController;
 
 
 
     // Use this for initialization
     void Start()
     {
+        playerController = FindObjectOfType<PlayerController>();
         positionToInstantiate = new Vector3(-7.59f, 7.44f, -0.9f);
+        LogicPlaneStartSwipe = 10;
         LogicPlane = 9;
         LogicPlaneMask = 1 << LogicPlane;
+        LogicPlaneStartSwipeMask = 1 << LogicPlaneStartSwipe;
         instantiatedSpear = Instantiate(newSpear, positionToInstantiate, Quaternion.identity) as GameObject;
 
     }
@@ -45,6 +53,7 @@ public class ShootController : MonoBehaviour
 
         if (flying)
         {
+            spearCanBeReleased = false;
             ShootSpear();
         }
 
@@ -52,34 +61,37 @@ public class ShootController : MonoBehaviour
         {
             for (int i = 0; i < Input.touchCount; ++i)
             {
-                if (Input.GetTouch(i).phase == TouchPhase.Began)
+               /* if (Input.GetTouch(i).phase == TouchPhase.Began)
                 {
                     CastRay(i);
                     if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, LogicPlaneMask))
                     {
                         rayHitLogicPlane = true;
                     }
-                }
+                }*/
                 if (Input.GetTouch(i).phase == TouchPhase.Moved)
                 {
-                    if (rayHitLogicPlane && !flying)
+                    if (playerController.aimingAvaliable && !flying)
                     {
+                        
                         CastRay(i);
                         if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, LogicPlaneMask))
                         {
+                            spearCanBeReleased = true;
+                            
                             instantiatedSpear.transform.rotation = Quaternion.Euler(0f, 0f, SpearAngleRotation());
 
-                           Debug.Log(SpearAngleRotation());
+                          // Debug.Log(SpearAngleRotation());
                         }
                     }
                 }
                 if (Input.GetTouch(i).phase == TouchPhase.Ended)
                 {
-                    if (rayHitLogicPlane)
+                    if (playerController.aimingAvaliable)
                     {
                         SetDirection();
-                        flying = true;
-                        rayHitLogicPlane = false;
+                        if(spearCanBeReleased ==true) flying = true;
+                        playerController.aimingAvaliable = false;
                         DestroySpear();
                     }
                 }
@@ -116,7 +128,7 @@ public class ShootController : MonoBehaviour
     }
 
 
-    void CastRay(int i)
+   private  void CastRay(int i)
     {
         ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
     }

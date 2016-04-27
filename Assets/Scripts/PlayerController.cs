@@ -17,16 +17,28 @@ public class PlayerController : MonoBehaviour
     private Vector3 startPos;
     private bool isTouch;
     private float minSwipeDistY = 40f;
+    private float minSwipeDistX = 50f;
     private float minSwipeDistX_Jump = 30f;
+    private float minSwipeDistVertical = 30f;
 
     private float timeToNextJump;
 
-  public  bool enableJumpAnimation;
+    public bool aimingAvaliable;
+
+    public  bool enableJumpAnimation;
+    private Ray ray;
+
+    RaycastHit hitInfo;
+    bool touchFirstLogicPlaneToStartSwipe;
+    ShootController shootController;
 
 
 
     void Start()
     {
+        shootController = FindObjectOfType<ShootController>();
+
+
         defaultPosition = transform.position.y;
        rb = GetComponent<Rigidbody>();
         lengthOfLine = new Vector3(0f, -0.5f, 0.0f);
@@ -54,24 +66,40 @@ public class PlayerController : MonoBehaviour
             {
                 case TouchPhase.Began:
                     startPos = touch.position;
+                    CastRay(startPos);
+                    if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, shootController.LogicPlaneStartSwipeMask))
+                    {
+                        touchFirstLogicPlaneToStartSwipe = true;
+                    }
                     break;
                 case TouchPhase.Moved:
                     float swipeDistHorizontal = (new Vector3(touch.position.x, 0, 0) - new Vector3(startPos.x, 0, 0)).magnitude;
                     float swipeDistVertical = (new Vector3(0, touch.position.y, 0) - new Vector3(0, startPos.y, 0)).magnitude;
-                   /* if (swipeDistHorizontal > minSwipeDistX)
+                    //horizontal Swipe
+                    Debug.Log("hor"+swipeDistHorizontal);
+                    Debug.Log("ver"+swipeDistVertical);
+                    if (swipeDistHorizontal > minSwipeDistX & swipeDistVertical<minSwipeDistVertical)
                     {
                         float swipeValue = Mathf.Sign(touch.position.x - startPos.x);
                         if (swipeValue > 0 && !isTouch)//to right swipe
                         {
+                            Debug.Log("+");
                             isTouch = true;
-                            StartCoroutine(Right());
+                            
                         }
-                        else if (swipeValue < 0 && !isTouch)//to left swipe
+                        else if (swipeValue < 0 && !isTouch && touchFirstLogicPlaneToStartSwipe)//to left swipe
                         {
+                            Debug.Log("-");
+                            
+                            
+                          
+                            aimingAvaliable = true;
+                                Debug.Log(aimingAvaliable);
+                           
                             isTouch = true;
-                            StartCoroutine(Left());
+                            
                         }
-                    }*/
+                    }
 
                     //add swipe to up
                     if (swipeDistVertical > minSwipeDistY && swipeDistHorizontal<minSwipeDistX_Jump )
@@ -95,15 +123,24 @@ public class PlayerController : MonoBehaviour
                     break;
                 case TouchPhase.Ended:
                     isTouch = false;
+                    touchFirstLogicPlaneToStartSwipe = false;
+                   // if (aimingAvaliable == true) aimingAvaliable = false;
                     break;
             }
         }
 #endif
     }
 
+
+    void CastRay(Vector3 pos)
+    {
+        ray = Camera.main.ScreenPointToRay(pos);
+    }
+
     bool Grounded()
     {
         return Physics.Linecast(groungCheck.position, groungCheck.position + lengthOfLine, out hit, 1 << LayerMask.NameToLayer("Ground"));
     }
+
 
 }
