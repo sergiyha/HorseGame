@@ -61,26 +61,15 @@ public class ShootController : MonoBehaviour
         {
             for (int i = 0; i < Input.touchCount; ++i)
             {
-               /* if (Input.GetTouch(i).phase == TouchPhase.Began)
-                {
-                    CastRay(i);
-                    if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, LogicPlaneMask))
-                    {
-                        rayHitLogicPlane = true;
-                    }
-                }*/
                 if (Input.GetTouch(i).phase == TouchPhase.Moved)
                 {
                     if (playerController.aimingAvaliable && !flying)
                     {
-                        
                         CastRay(i);
                         if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, LogicPlaneMask))
                         {
                             spearCanBeReleased = true;
-                            
                             instantiatedSpear.transform.rotation = Quaternion.Euler(0f, 0f, SpearAngleRotation());
-
                           // Debug.Log(SpearAngleRotation());
                         }
                     }
@@ -123,11 +112,11 @@ public class ShootController : MonoBehaviour
         Vector3 second = new Vector3(worldSpaceHitInfo.x, instantiatedSpear.transform.position.y, instantiatedSpear.transform.position.z) - instantiatedSpear.transform.position;
         angle = Vector3.Angle(first, second);
 
+
+
         if (worldSpaceHitInfo.y >= instantiatedSpear.transform.position.y) angle = -angle;
         return angle;
     }
-
-
    private  void CastRay(int i)
     {
         ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);

@@ -27,9 +27,11 @@ public class PlayerController : MonoBehaviour
 
     public  bool enableJumpAnimation;
     private Ray ray;
-
     RaycastHit hitInfo;
+
     bool touchFirstLogicPlaneToStartSwipe;
+    private bool canSwipeToAim;
+
     ShootController shootController;
 
 
@@ -75,10 +77,14 @@ public class PlayerController : MonoBehaviour
                 case TouchPhase.Moved:
                     float swipeDistHorizontal = (new Vector3(touch.position.x, 0, 0) - new Vector3(startPos.x, 0, 0)).magnitude;
                     float swipeDistVertical = (new Vector3(0, touch.position.y, 0) - new Vector3(0, startPos.y, 0)).magnitude;
+                    if (swipeDistVertical > minSwipeDistVertical) {
+                        canSwipeToAim = false;
+                    }
+                  
                     //horizontal Swipe
                     Debug.Log("hor"+swipeDistHorizontal);
                     Debug.Log("ver"+swipeDistVertical);
-                    if (swipeDistHorizontal > minSwipeDistX & swipeDistVertical<minSwipeDistVertical)
+                    if (swipeDistHorizontal > minSwipeDistX && canSwipeToAim)
                     {
                         float swipeValue = Mathf.Sign(touch.position.x - startPos.x);
                         if (swipeValue > 0 && !isTouch)//to right swipe
@@ -90,12 +96,8 @@ public class PlayerController : MonoBehaviour
                         else if (swipeValue < 0 && !isTouch && touchFirstLogicPlaneToStartSwipe)//to left swipe
                         {
                             Debug.Log("-");
-                            
-                            
-                          
                             aimingAvaliable = true;
-                                Debug.Log(aimingAvaliable);
-                           
+                            Debug.Log(aimingAvaliable);
                             isTouch = true;
                             
                         }
@@ -123,8 +125,8 @@ public class PlayerController : MonoBehaviour
                     break;
                 case TouchPhase.Ended:
                     isTouch = false;
+                    canSwipeToAim = true;
                     touchFirstLogicPlaneToStartSwipe = false;
-                   // if (aimingAvaliable == true) aimingAvaliable = false;
                     break;
             }
         }
