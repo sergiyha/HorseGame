@@ -9,9 +9,6 @@ public class ShootController : MonoBehaviour
     public float spearSpeed;
 
     private int LogicPlane;
-    public int LogicPlaneMask;
-    public int LogicPlaneStartSwipe;
-    public int LogicPlaneStartSwipeMask;
 
     private Ray ray;
     private RaycastHit hitInfo;
@@ -25,8 +22,12 @@ public class ShootController : MonoBehaviour
     
 
     private GameObject instantiatedSpear;
-    public PlayerController playerController;
+    private PlayerController playerController;
 
+    [System.NonSerialized]
+    public int LogicPlaneMask;
+    public int LogicPlaneStartSwipe;
+    public int LogicPlaneStartSwipeMask;
 
 
     // Use this for initialization
@@ -59,12 +60,16 @@ public class ShootController : MonoBehaviour
 
         if (Input.touchCount > 0)
         {
+           // Debug.Log("a");
             for (int i = 0; i < Input.touchCount; ++i)
             {
+                //Debug.Log("b");
                 if (Input.GetTouch(i).phase == TouchPhase.Moved)
                 {
+                    
                     if (playerController.aimingAvaliable && !flying)
                     {
+                      //  Debug.Log("d");
                         CastRay(i);
                         if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, LogicPlaneMask))
                         {
@@ -73,6 +78,7 @@ public class ShootController : MonoBehaviour
                           // Debug.Log(SpearAngleRotation());
                         }
                     }
+                 
                 }
                 if (Input.GetTouch(i).phase == TouchPhase.Ended)
                 {
@@ -108,13 +114,13 @@ public class ShootController : MonoBehaviour
 
         Vector3 worldSpaceHitInfo = hitInfo.point;
         //Debug.Log(worldSpaceHitInfo);
-        Vector3 first = worldSpaceHitInfo - instantiatedSpear.transform.position;
-        Vector3 second = new Vector3(worldSpaceHitInfo.x, instantiatedSpear.transform.position.y, instantiatedSpear.transform.position.z) - instantiatedSpear.transform.position;
+        Vector3 first = worldSpaceHitInfo - playerController.firstTouchPosition;
+        Vector3 second = new Vector3(worldSpaceHitInfo.x, playerController.firstTouchPosition.y, playerController.firstTouchPosition.z) - playerController.firstTouchPosition;
         angle = Vector3.Angle(first, second);
 
+        
 
-
-        if (worldSpaceHitInfo.y >= instantiatedSpear.transform.position.y) angle = -angle;
+        if (worldSpaceHitInfo.y >= playerController.firstTouchPosition.y) angle = -angle;
         return angle;
     }
    private  void CastRay(int i)

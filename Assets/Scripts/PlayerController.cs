@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     private float minSwipeDistY = 40f;
     private float minSwipeDistX = 50f;
     private float minSwipeDistX_Jump = 30f;
-    private float minSwipeDistVertical = 30f;
+    private float minSpearSwipeDistVertical = 30f;
 
     private float timeToNextJump;
 
@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
 
     bool touchFirstLogicPlaneToStartSwipe;
     private bool canSwipeToAim;
+    public Vector3 firstTouchPosition;
 
     ShootController shootController;
 
@@ -39,7 +40,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         shootController = FindObjectOfType<ShootController>();
-
+       
 
         defaultPosition = transform.position.y;
        rb = GetComponent<Rigidbody>();
@@ -71,34 +72,35 @@ public class PlayerController : MonoBehaviour
                     CastRay(startPos);
                     if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, shootController.LogicPlaneStartSwipeMask))
                     {
+                        firstTouchPosition = hitInfo.point;
+                       // Debug.Log(firstTouchPosition);
                         touchFirstLogicPlaneToStartSwipe = true;
                     }
                     break;
                 case TouchPhase.Moved:
                     float swipeDistHorizontal = (new Vector3(touch.position.x, 0, 0) - new Vector3(startPos.x, 0, 0)).magnitude;
                     float swipeDistVertical = (new Vector3(0, touch.position.y, 0) - new Vector3(0, startPos.y, 0)).magnitude;
-                    if (swipeDistVertical > minSwipeDistVertical) {
-                        canSwipeToAim = false;
-                    }
-                  
+                    if (swipeDistVertical < minSpearSwipeDistVertical) {
+                        canSwipeToAim = true;
+                    }                 
                     //horizontal Swipe
-                    Debug.Log("hor"+swipeDistHorizontal);
-                    Debug.Log("ver"+swipeDistVertical);
+                    //Debug.Log("hor"+swipeDistHorizontal);
+                   // Debug.Log("ver"+swipeDistVertical);
                     if (swipeDistHorizontal > minSwipeDistX && canSwipeToAim)
                     {
+                       
                         float swipeValue = Mathf.Sign(touch.position.x - startPos.x);
                         if (swipeValue > 0 && !isTouch)//to right swipe
                         {
                             Debug.Log("+");
-                            isTouch = true;
-                            
+                            isTouch = true;                           
                         }
                         else if (swipeValue < 0 && !isTouch && touchFirstLogicPlaneToStartSwipe)//to left swipe
                         {
                             Debug.Log("-");
                             aimingAvaliable = true;
-                            Debug.Log(aimingAvaliable);
-                            isTouch = true;
+                           // Debug.Log(aimingAvaliable);
+                            isTouch = true;                           
                             
                         }
                     }
@@ -106,7 +108,6 @@ public class PlayerController : MonoBehaviour
                     //add swipe to up
                     if (swipeDistVertical > minSwipeDistY && swipeDistHorizontal<minSwipeDistX_Jump )
                     {
-                        
                         float swipeValue = Mathf.Sign(touch.position.y - startPos.y);
                         if (swipeValue < 0 && !isTouch && !Grounded())
                         {
@@ -125,7 +126,7 @@ public class PlayerController : MonoBehaviour
                     break;
                 case TouchPhase.Ended:
                     isTouch = false;
-                    canSwipeToAim = true;
+                    canSwipeToAim = false;
                     touchFirstLogicPlaneToStartSwipe = false;
                     break;
             }
