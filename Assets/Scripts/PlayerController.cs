@@ -20,20 +20,26 @@ public class PlayerController : MonoBehaviour
     private float minSwipeDistX = 50f;
     private float minSwipeDistX_Jump = 30f;
     private float minSpearSwipeDistVertical = 30f;
+    private ShootController shootController;
 
     private float timeToNextJump;
 
-    public bool aimingAvaliable;
 
-    public  bool enableJumpAnimation;
     private Ray ray;
     RaycastHit hitInfo;
 
     bool touchFirstLogicPlaneToStartSwipe;
     private bool canSwipeToAim;
-    public Vector3 firstTouchPosition;
 
-    ShootController shootController;
+    [System.NonSerialized]
+    public bool enableJumpAnimation;
+    [System.NonSerialized]
+    public Vector3 firstTouchPosition;
+    [System.NonSerialized]
+    public bool aimingAvaliable;
+
+    
+
 
 
 

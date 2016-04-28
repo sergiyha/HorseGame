@@ -23,11 +23,16 @@ public class ShootController : MonoBehaviour
 
     private GameObject instantiatedSpear;
     private PlayerController playerController;
+    public float timeScale;
 
     [System.NonSerialized]
     public int LogicPlaneMask;
+    [System.NonSerialized]
     public int LogicPlaneStartSwipe;
+    [System.NonSerialized]
     public int LogicPlaneStartSwipeMask;
+
+    public bool cameraCanSmoothlyMove;
 
 
     // Use this for initialization
@@ -69,7 +74,9 @@ public class ShootController : MonoBehaviour
                     
                     if (playerController.aimingAvaliable && !flying)
                     {
+                        Time.timeScale = timeScale; //slow the game when you're aiming 
                       //  Debug.Log("d");
+                        cameraCanSmoothlyMove = true;//move camera when you're aiming
                         CastRay(i);
                         if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, LogicPlaneMask))
                         {
@@ -82,13 +89,13 @@ public class ShootController : MonoBehaviour
                 }
                 if (Input.GetTouch(i).phase == TouchPhase.Ended)
                 {
-                    if (playerController.aimingAvaliable)
-                    {
+                        Time.timeScale = 1;
+                    cameraCanSmoothlyMove = false;
                         SetDirection();
                         if(spearCanBeReleased ==true) flying = true;
                         playerController.aimingAvaliable = false;
                         DestroySpear();
-                    }
+                    
                 }
 
             }

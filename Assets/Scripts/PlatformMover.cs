@@ -7,7 +7,6 @@ public class PlatformMover : MonoBehaviour
     public GameObject[] platforms;
     private GameObject[] instanstiatedObjects = new GameObject[3];
     public float offScrean;//-45
-    public float onScreen;
     public Vector3 spawnPosition;
     public GameObject firstPlatform;
     public float platformSpeed;
@@ -25,7 +24,7 @@ public class PlatformMover : MonoBehaviour
 
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (instanstiatedObjects[left] != null)
         {
@@ -50,7 +49,7 @@ public class PlatformMover : MonoBehaviour
 
     void TranslatreGround(GameObject obj)
     {
-        obj.transform.Translate(new Vector3(platformSpeed, 0f, 0f) * Time.deltaTime);
+        obj.transform.position +=Vector3.left * platformSpeed*Time.deltaTime; //Translate(new Vector3(platformSpeed, 0f, 0f) * Time.deltaTime);
 
     }
 
