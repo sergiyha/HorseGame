@@ -34,10 +34,14 @@ public class ShootController : MonoBehaviour
 
     public bool cameraCanSmoothlyMove;
 
+    private bool canCheckIfTouchIsOutOfAimingRange;
+    public bool setShootSettingsWhenThouchPhaseEnded;
+
 
     // Use this for initialization
     void Start()
     {
+        setShootSettingsWhenThouchPhaseEnded = true;
         playerController = FindObjectOfType<PlayerController>();
         positionToInstantiate = new Vector3(-7.59f, 7.44f, -0.9f);
         LogicPlaneStartSwipe = 10;
@@ -71,17 +75,35 @@ public class ShootController : MonoBehaviour
                 //Debug.Log("b");
                 if (Input.GetTouch(i).phase == TouchPhase.Moved)
                 {
+                    if (canCheckIfTouchIsOutOfAimingRange)
+                    {
+                        Ray checkRay;
+                        checkRay = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
+                        if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, LogicPlaneStartSwipeMask))
+                        {
+                            Debug.Log("dfdf");
+                            Time.timeScale = 1;
+                            cameraCanSmoothlyMove = false;
+                            SetDirection();
+                            if (spearCanBeReleased == true) flying = true;
+                            playerController.aimingAvaliable = false;
+                            DestroySpear();
+                            setShootSettingsWhenThouchPhaseEnded = false;
+
+                        }
+                    }
                     
                     if (playerController.aimingAvaliable && !flying)
                     {
-                        Time.timeScale = timeScale; //slow the game when you're aiming 
                       //  Debug.Log("d");
-                        cameraCanSmoothlyMove = true;//move camera when you're aiming
                         CastRay(i);
                         if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, LogicPlaneMask))
                         {
+                            Time.timeScale = timeScale; //slow the game when you're aiming 
+                            cameraCanSmoothlyMove = true;//move camera when you're aiming
                             spearCanBeReleased = true;
                             instantiatedSpear.transform.rotation = Quaternion.Euler(0f, 0f, SpearAngleRotation());
+                            canCheckIfTouchIsOutOfAimingRange = true;
                           // Debug.Log(SpearAngleRotation());
                         }
                     }
@@ -89,12 +111,20 @@ public class ShootController : MonoBehaviour
                 }
                 if (Input.GetTouch(i).phase == TouchPhase.Ended)
                 {
+                    if (setShootSettingsWhenThouchPhaseEnded)
+                    {
+                        Debug.Log("Settings");
                         Time.timeScale = 1;
-                    cameraCanSmoothlyMove = false;
+                        cameraCanSmoothlyMove = false;
                         SetDirection();
-                        if(spearCanBeReleased ==true) flying = true;
+                        if (spearCanBeReleased == true) flying = true;
                         playerController.aimingAvaliable = false;
                         DestroySpear();
+                    }else {
+                        setShootSettingsWhenThouchPhaseEnded = true;
+                    }
+                        canCheckIfTouchIsOutOfAimingRange = false;
+                    
                     
                 }
 
