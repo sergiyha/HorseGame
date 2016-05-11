@@ -1,0 +1,1477 @@
+fileFormatVersion: 2
+guid: 0adb539ae6c979440a4f5295c8cd3b2d
+timeCreated: 1463008246
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: armor1
+    100002: body
+    100004: cape
+    100006: chestPlate
+    100008: head
+    100010: head 1
+    100012: helmet2
+    100014: HORSE
+    100016: //RootNode
+    100018: Horse_GEO1
+    100020: horse_helmet
+    100022: horse_hip
+    100024: jaw01
+    100026: jaw02
+    100028: jaw03
+    100030: joint1
+    100032: knight_GEO
+    100034: knight_hip
+    100036: L_elbow
+    100038: L_front_leg01
+    100040: L_front_leg02
+    100042: L_front_leg03
+    100044: L_front_leg04
+    100046: L_front_leg05
+    100048: L_front_leg06
+    100050: L_front_leg07
+    100052: L_hand1
+    100054: L_hand2
+    100056: L_leg1
+    100058: L_leg2
+    100060: L_leg3
+    100062: L_leg4
+    100064: L_leg5
+    100066: L_palm1
+    100068: L_palm2
+    100070: L_rear_leg01
+    100072: L_rear_leg02
+    100074: L_rear_leg03
+    100076: L_rear_leg04
+    100078: L_rear_leg05
+    100080: L_rear_leg06
+    100082: L_shouderPad
+    100084: L_shoulder
+    100086: L_shoulderPad1
+    100088: L_shoulderPad2
+    100090: L_thumb1
+    100092: L_thumb2
+    100094: L_thumb3
+    100096: neck01
+    100098: neck02
+    100100: neck03
+    100102: neck1
+    100104: neck2
+    100106: nose
+    100108: R_elbow
+    100110: R_front_leg01
+    100112: R_front_leg02
+    100114: R_front_leg03
+    100116: R_front_leg04
+    100118: R_front_leg05
+    100120: R_front_leg06
+    100122: R_front_leg07
+    100124: R_hand1
+    100126: R_hand2
+    100128: R_leg1
+    100130: R_leg2
+    100132: R_leg3
+    100134: R_leg4
+    100136: R_leg5
+    100138: R_palm1
+    100140: R_palm2
+    100142: R_rear_leg01
+    100144: R_rear_leg02
+    100146: R_rear_leg03
+    100148: R_rear_leg04
+    100150: R_rear_leg05
+    100152: R_rear_leg06
+    100154: R_shouderPad
+    100156: R_shoulder
+    100158: R_shoulderPad1
+    100160: R_shoulderPad2
+    100162: R_thumb1
+    100164: R_thumb2
+    100166: R_thumb3
+    100168: saddle
+    100170: spine1
+    100172: spine2
+    100174: spine2 1
+    100176: spine3
+    100178: spine4
+    100180: spine5
+    100182: spine7
+    100184: spine_end
+    100186: tabard
+    100188: tail1
+    100190: tail2
+    100192: tail3
+    100194: tail4
+    100196: tail5
+    100198: tail6
+    100200: tail7
+    400000: armor1
+    400002: body
+    400004: cape
+    400006: chestPlate
+    400008: head
+    400010: head 1
+    400012: helmet2
+    400014: HORSE
+    400016: //RootNode
+    400018: Horse_GEO1
+    400020: horse_helmet
+    400022: horse_hip
+    400024: jaw01
+    400026: jaw02
+    400028: jaw03
+    400030: joint1
+    400032: knight_GEO
+    400034: knight_hip
+    400036: L_elbow
+    400038: L_front_leg01
+    400040: L_front_leg02
+    400042: L_front_leg03
+    400044: L_front_leg04
+    400046: L_front_leg05
+    400048: L_front_leg06
+    400050: L_front_leg07
+    400052: L_hand1
+    400054: L_hand2
+    400056: L_leg1
+    400058: L_leg2
+    400060: L_leg3
+    400062: L_leg4
+    400064: L_leg5
+    400066: L_palm1
+    400068: L_palm2
+    400070: L_rear_leg01
+    400072: L_rear_leg02
+    400074: L_rear_leg03
+    400076: L_rear_leg04
+    400078: L_rear_leg05
+    400080: L_rear_leg06
+    400082: L_shouderPad
+    400084: L_shoulder
+    400086: L_shoulderPad1
+    400088: L_shoulderPad2
+    400090: L_thumb1
+    400092: L_thumb2
+    400094: L_thumb3
+    400096: neck01
+    400098: neck02
+    400100: neck03
+    400102: neck1
+    400104: neck2
+    400106: nose
+    400108: R_elbow
+    400110: R_front_leg01
+    400112: R_front_leg02
+    400114: R_front_leg03
+    400116: R_front_leg04
+    400118: R_front_leg05
+    400120: R_front_leg06
+    400122: R_front_leg07
+    400124: R_hand1
+    400126: R_hand2
+    400128: R_leg1
+    400130: R_leg2
+    400132: R_leg3
+    400134: R_leg4
+    400136: R_leg5
+    400138: R_palm1
+    400140: R_palm2
+    400142: R_rear_leg01
+    400144: R_rear_leg02
+    400146: R_rear_leg03
+    400148: R_rear_leg04
+    400150: R_rear_leg05
+    400152: R_rear_leg06
+    400154: R_shouderPad
+    400156: R_shoulder
+    400158: R_shoulderPad1
+    400160: R_shoulderPad2
+    400162: R_thumb1
+    400164: R_thumb2
+    400166: R_thumb3
+    400168: saddle
+    400170: spine1
+    400172: spine2
+    400174: spine2 1
+    400176: spine3
+    400178: spine4
+    400180: spine5
+    400182: spine7
+    400184: spine_end
+    400186: tabard
+    400188: tail1
+    400190: tail2
+    400192: tail3
+    400194: tail4
+    400196: tail5
+    400198: tail6
+    400200: tail7
+    2300000: cape
+    3300000: cape
+    4300000: body
+    4300002: chestPlate
+    4300004: cape
+    4300006: R_shouderPad
+    4300008: L_shouderPad
+    4300010: helmet2
+    4300012: HORSE
+    4300014: saddle
+    4300016: horse_helmet
+    4300018: armor1
+    4300020: tabard
+    7400000: gallop
+    7400002: swing
+    7400004: throw
+    7400006: jump
+    7400008: waitForThrow
+    9500000: //RootNode
+    13700000: armor1
+    13700002: body
+    13700004: chestPlate
+    13700006: helmet2
+    13700008: HORSE
+    13700010: horse_helmet
+    13700012: L_shouderPad
+    13700014: R_shouderPad
+    13700016: saddle
+    13700018: tabard
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 35
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: gallop
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Horse_GEO1
+        weight: 1
+      - path: Horse_GEO1/armor1
+        weight: 1
+      - path: Horse_GEO1/HORSE
+        weight: 1
+      - path: Horse_GEO1/horse_helmet
+        weight: 1
+      - path: Horse_GEO1/saddle
+        weight: 1
+      - path: Horse_GEO1/tabard
+        weight: 1
+      - path: joint1
+        weight: 1
+      - path: joint1/horse_hip
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03/L_rear_leg04
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03/L_rear_leg04/L_rear_leg05
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03/L_rear_leg04/L_rear_leg05/L_rear_leg06
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03/R_rear_leg04
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03/R_rear_leg04/R_rear_leg05
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03/R_rear_leg04/R_rear_leg05/R_rear_leg06
+        weight: 1
+      - path: joint1/horse_hip/spine2
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04/L_front_leg05
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04/L_front_leg05/L_front_leg06
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04/L_front_leg05/L_front_leg06/L_front_leg07
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/jaw01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/jaw01/jaw02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/jaw01/jaw02/jaw03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/nose
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04/R_front_leg05
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04/R_front_leg05/R_front_leg06
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04/R_front_leg05/R_front_leg06/R_front_leg07
+        weight: 1
+      - path: joint1/horse_hip/tail1
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: joint1/knight_hip
+        weight: 1
+      - path: joint1/knight_hip/L_leg1
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2/L_leg3
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2/L_leg3/L_leg4
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2/L_leg3/L_leg4/L_leg5
+        weight: 1
+      - path: joint1/knight_hip/R_leg1
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2/R_leg3
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2/R_leg3/R_leg4
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2/R_leg3/R_leg4/R_leg5
+        weight: 1
+      - path: joint1/knight_hip/spine1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_palm1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_palm1/L_palm2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_thumb1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_thumb1/L_thumb2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_thumb1/L_thumb2/L_thumb3
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulderPad1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulderPad1/L_shoulderPad2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/neck1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/neck1/neck2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/neck1/neck2/head
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_palm1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_palm1/R_palm2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_thumb1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_thumb1/R_thumb2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_thumb1/R_thumb2/R_thumb3
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulderPad1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulderPad1/R_shoulderPad2
+        weight: 1
+      - path: knight_GEO
+        weight: 1
+      - path: knight_GEO/body
+        weight: 1
+      - path: knight_GEO/cape
+        weight: 1
+      - path: knight_GEO/chestPlate
+        weight: 1
+      - path: knight_GEO/helmet2
+        weight: 1
+      - path: knight_GEO/L_shouderPad
+        weight: 1
+      - path: knight_GEO/R_shouderPad
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: swing
+      takeName: Take 001
+      firstFrame: 17
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Horse_GEO1
+        weight: 1
+      - path: Horse_GEO1/armor1
+        weight: 1
+      - path: Horse_GEO1/HORSE
+        weight: 1
+      - path: Horse_GEO1/horse_helmet
+        weight: 1
+      - path: Horse_GEO1/saddle
+        weight: 1
+      - path: Horse_GEO1/tabard
+        weight: 1
+      - path: joint1
+        weight: 1
+      - path: joint1/horse_hip
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03/L_rear_leg04
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03/L_rear_leg04/L_rear_leg05
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03/L_rear_leg04/L_rear_leg05/L_rear_leg06
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03/R_rear_leg04
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03/R_rear_leg04/R_rear_leg05
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03/R_rear_leg04/R_rear_leg05/R_rear_leg06
+        weight: 1
+      - path: joint1/horse_hip/spine2
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04/L_front_leg05
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04/L_front_leg05/L_front_leg06
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04/L_front_leg05/L_front_leg06/L_front_leg07
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/jaw01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/jaw01/jaw02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/jaw01/jaw02/jaw03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/nose
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04/R_front_leg05
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04/R_front_leg05/R_front_leg06
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04/R_front_leg05/R_front_leg06/R_front_leg07
+        weight: 1
+      - path: joint1/horse_hip/tail1
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: joint1/knight_hip
+        weight: 1
+      - path: joint1/knight_hip/L_leg1
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2/L_leg3
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2/L_leg3/L_leg4
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2/L_leg3/L_leg4/L_leg5
+        weight: 1
+      - path: joint1/knight_hip/R_leg1
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2/R_leg3
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2/R_leg3/R_leg4
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2/R_leg3/R_leg4/R_leg5
+        weight: 1
+      - path: joint1/knight_hip/spine1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_palm1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_palm1/L_palm2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_thumb1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_thumb1/L_thumb2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_thumb1/L_thumb2/L_thumb3
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulderPad1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulderPad1/L_shoulderPad2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/neck1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/neck1/neck2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/neck1/neck2/head
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_palm1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_palm1/R_palm2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_thumb1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_thumb1/R_thumb2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_thumb1/R_thumb2/R_thumb3
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulderPad1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulderPad1/R_shoulderPad2
+        weight: 1
+      - path: knight_GEO
+        weight: 1
+      - path: knight_GEO/body
+        weight: 1
+      - path: knight_GEO/cape
+        weight: 1
+      - path: knight_GEO/chestPlate
+        weight: 1
+      - path: knight_GEO/helmet2
+        weight: 1
+      - path: knight_GEO/L_shouderPad
+        weight: 1
+      - path: knight_GEO/R_shouderPad
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: throw
+      takeName: Take 001
+      firstFrame: 25
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Horse_GEO1
+        weight: 1
+      - path: Horse_GEO1/armor1
+        weight: 1
+      - path: Horse_GEO1/HORSE
+        weight: 1
+      - path: Horse_GEO1/horse_helmet
+        weight: 1
+      - path: Horse_GEO1/saddle
+        weight: 1
+      - path: Horse_GEO1/tabard
+        weight: 1
+      - path: joint1
+        weight: 1
+      - path: joint1/horse_hip
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03/L_rear_leg04
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03/L_rear_leg04/L_rear_leg05
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03/L_rear_leg04/L_rear_leg05/L_rear_leg06
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03/R_rear_leg04
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03/R_rear_leg04/R_rear_leg05
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03/R_rear_leg04/R_rear_leg05/R_rear_leg06
+        weight: 1
+      - path: joint1/horse_hip/spine2
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04/L_front_leg05
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04/L_front_leg05/L_front_leg06
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04/L_front_leg05/L_front_leg06/L_front_leg07
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/jaw01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/jaw01/jaw02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/jaw01/jaw02/jaw03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/nose
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04/R_front_leg05
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04/R_front_leg05/R_front_leg06
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04/R_front_leg05/R_front_leg06/R_front_leg07
+        weight: 1
+      - path: joint1/horse_hip/tail1
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: joint1/knight_hip
+        weight: 1
+      - path: joint1/knight_hip/L_leg1
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2/L_leg3
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2/L_leg3/L_leg4
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2/L_leg3/L_leg4/L_leg5
+        weight: 1
+      - path: joint1/knight_hip/R_leg1
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2/R_leg3
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2/R_leg3/R_leg4
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2/R_leg3/R_leg4/R_leg5
+        weight: 1
+      - path: joint1/knight_hip/spine1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_palm1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_palm1/L_palm2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_thumb1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_thumb1/L_thumb2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_thumb1/L_thumb2/L_thumb3
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulderPad1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulderPad1/L_shoulderPad2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/neck1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/neck1/neck2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/neck1/neck2/head
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_palm1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_palm1/R_palm2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_thumb1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_thumb1/R_thumb2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_thumb1/R_thumb2/R_thumb3
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulderPad1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulderPad1/R_shoulderPad2
+        weight: 1
+      - path: knight_GEO
+        weight: 1
+      - path: knight_GEO/body
+        weight: 1
+      - path: knight_GEO/cape
+        weight: 1
+      - path: knight_GEO/chestPlate
+        weight: 1
+      - path: knight_GEO/helmet2
+        weight: 1
+      - path: knight_GEO/L_shouderPad
+        weight: 1
+      - path: knight_GEO/R_shouderPad
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: jump
+      takeName: Take 001
+      firstFrame: 50
+      lastFrame: 74
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Horse_GEO1
+        weight: 1
+      - path: Horse_GEO1/armor1
+        weight: 1
+      - path: Horse_GEO1/HORSE
+        weight: 1
+      - path: Horse_GEO1/horse_helmet
+        weight: 1
+      - path: Horse_GEO1/saddle
+        weight: 1
+      - path: Horse_GEO1/tabard
+        weight: 1
+      - path: joint1
+        weight: 1
+      - path: joint1/horse_hip
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03/L_rear_leg04
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03/L_rear_leg04/L_rear_leg05
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03/L_rear_leg04/L_rear_leg05/L_rear_leg06
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03/R_rear_leg04
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03/R_rear_leg04/R_rear_leg05
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03/R_rear_leg04/R_rear_leg05/R_rear_leg06
+        weight: 1
+      - path: joint1/horse_hip/spine2
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04/L_front_leg05
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04/L_front_leg05/L_front_leg06
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04/L_front_leg05/L_front_leg06/L_front_leg07
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/jaw01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/jaw01/jaw02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/jaw01/jaw02/jaw03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/nose
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04/R_front_leg05
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04/R_front_leg05/R_front_leg06
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04/R_front_leg05/R_front_leg06/R_front_leg07
+        weight: 1
+      - path: joint1/horse_hip/tail1
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: joint1/knight_hip
+        weight: 1
+      - path: joint1/knight_hip/L_leg1
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2/L_leg3
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2/L_leg3/L_leg4
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2/L_leg3/L_leg4/L_leg5
+        weight: 1
+      - path: joint1/knight_hip/R_leg1
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2/R_leg3
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2/R_leg3/R_leg4
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2/R_leg3/R_leg4/R_leg5
+        weight: 1
+      - path: joint1/knight_hip/spine1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_palm1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_palm1/L_palm2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_thumb1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_thumb1/L_thumb2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_thumb1/L_thumb2/L_thumb3
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulderPad1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulderPad1/L_shoulderPad2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/neck1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/neck1/neck2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/neck1/neck2/head
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_palm1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_palm1/R_palm2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_thumb1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_thumb1/R_thumb2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_thumb1/R_thumb2/R_thumb3
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulderPad1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulderPad1/R_shoulderPad2
+        weight: 1
+      - path: knight_GEO
+        weight: 1
+      - path: knight_GEO/body
+        weight: 1
+      - path: knight_GEO/cape
+        weight: 1
+      - path: knight_GEO/chestPlate
+        weight: 1
+      - path: knight_GEO/helmet2
+        weight: 1
+      - path: knight_GEO/L_shouderPad
+        weight: 1
+      - path: knight_GEO/R_shouderPad
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: waitForThrow
+      takeName: Take 001
+      firstFrame: 24
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Horse_GEO1
+        weight: 1
+      - path: Horse_GEO1/armor1
+        weight: 1
+      - path: Horse_GEO1/HORSE
+        weight: 1
+      - path: Horse_GEO1/horse_helmet
+        weight: 1
+      - path: Horse_GEO1/saddle
+        weight: 1
+      - path: Horse_GEO1/tabard
+        weight: 1
+      - path: joint1
+        weight: 1
+      - path: joint1/horse_hip
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03/L_rear_leg04
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03/L_rear_leg04/L_rear_leg05
+        weight: 1
+      - path: joint1/horse_hip/L_rear_leg01/L_rear_leg02/L_rear_leg03/L_rear_leg04/L_rear_leg05/L_rear_leg06
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03/R_rear_leg04
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03/R_rear_leg04/R_rear_leg05
+        weight: 1
+      - path: joint1/horse_hip/R_rear_leg01/R_rear_leg02/R_rear_leg03/R_rear_leg04/R_rear_leg05/R_rear_leg06
+        weight: 1
+      - path: joint1/horse_hip/spine2
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04/L_front_leg05
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04/L_front_leg05/L_front_leg06
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/L_front_leg01/L_front_leg02/L_front_leg03/L_front_leg04/L_front_leg05/L_front_leg06/L_front_leg07
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/jaw01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/jaw01/jaw02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/jaw01/jaw02/jaw03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/neck01/neck02/neck03/head
+          1/nose
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04/R_front_leg05
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04/R_front_leg05/R_front_leg06
+        weight: 1
+      - path: joint1/horse_hip/spine2/spine3/spine4/spine5/spine7/spine_end/R_front_leg01/R_front_leg02/R_front_leg03/R_front_leg04/R_front_leg05/R_front_leg06/R_front_leg07
+        weight: 1
+      - path: joint1/horse_hip/tail1
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4/tail5
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4/tail5/tail6
+        weight: 1
+      - path: joint1/horse_hip/tail1/tail2/tail3/tail4/tail5/tail6/tail7
+        weight: 1
+      - path: joint1/knight_hip
+        weight: 1
+      - path: joint1/knight_hip/L_leg1
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2/L_leg3
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2/L_leg3/L_leg4
+        weight: 1
+      - path: joint1/knight_hip/L_leg1/L_leg2/L_leg3/L_leg4/L_leg5
+        weight: 1
+      - path: joint1/knight_hip/R_leg1
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2/R_leg3
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2/R_leg3/R_leg4
+        weight: 1
+      - path: joint1/knight_hip/R_leg1/R_leg2/R_leg3/R_leg4/R_leg5
+        weight: 1
+      - path: joint1/knight_hip/spine1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_palm1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_palm1/L_palm2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_thumb1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_thumb1/L_thumb2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulder/L_elbow/L_hand1/L_hand2/L_thumb1/L_thumb2/L_thumb3
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulderPad1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/L_shoulderPad1/L_shoulderPad2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/neck1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/neck1/neck2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/neck1/neck2/head
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_palm1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_palm1/R_palm2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_thumb1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_thumb1/R_thumb2
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulder/R_elbow/R_hand1/R_hand2/R_thumb1/R_thumb2/R_thumb3
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulderPad1
+        weight: 1
+      - path: joint1/knight_hip/spine1/spine2 1/R_shoulderPad1/R_shoulderPad2
+        weight: 1
+      - path: knight_GEO
+        weight: 1
+      - path: knight_GEO/body
+        weight: 1
+      - path: knight_GEO/cape
+        weight: 1
+      - path: knight_GEO/chestPlate
+        weight: 1
+      - path: knight_GEO/helmet2
+        weight: 1
+      - path: knight_GEO/L_shouderPad
+        weight: 1
+      - path: knight_GEO/R_shouderPad
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
