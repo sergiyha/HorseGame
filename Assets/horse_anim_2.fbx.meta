@@ -250,7 +250,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 35
@@ -1201,7 +1201,7 @@ ModelImporter:
       name: waitForThrow
       takeName: Take 001
       firstFrame: 24
-      lastFrame: 24
+      lastFrame: 25
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

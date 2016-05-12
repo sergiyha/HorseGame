@@ -20,6 +20,15 @@ public class AnimationController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            animator.SetTrigger("swing");
+        }
+        else if (Input.GetKeyUp(KeyCode.W))
+        {
+            animator.SetTrigger("throw");
+        }
+
         transform.position = horseCollider.position;
        transform.rotation = Quaternion.Euler(-horseCollider.eulerAngles.z,transform.eulerAngles.y, transform.eulerAngles.z);
         
@@ -28,5 +37,11 @@ public class AnimationController : MonoBehaviour
             animator.SetTrigger("Up");
             playerController.enableJumpAnimation = false;
         }
+    }
+    public void resetSwingAnimation()
+    {
+        animator.SetTrigger("resetThrow");
+        animator.SetTrigger("resetSwing");
+        
     }
 }
