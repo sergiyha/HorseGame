@@ -6,24 +6,30 @@ public class ShootController : MonoBehaviour
 
     public float timeToRespawnSpear;
     public GameObject newSpear;
+    public GameObject spearPlace;
     public float spearSpeed;
 
     private int LogicPlane;
 
     private Ray ray;
     private RaycastHit hitInfo;
-    
+
     private Vector3 shootDirection;
     private Vector3 positionToInstantiate;
 
     private bool flying;
     private bool rayHitLogicPlane;
     private bool spearCanBeReleased;
-    
+    private bool throwAnimationCanBePlayed;
+
 
     private GameObject instantiatedSpear;
     private PlayerController playerController;
     public float timeScale;
+
+    //knight shoot animation
+    public bool swingAnimation;
+    public bool throwAnimation;
 
     [System.NonSerialized]
     public int LogicPlaneMask;
@@ -31,6 +37,7 @@ public class ShootController : MonoBehaviour
     public int LogicPlaneStartSwipe;
     [System.NonSerialized]
     public int LogicPlaneStartSwipeMask;
+
 
     public bool cameraCanSmoothlyMove;
 
@@ -41,6 +48,8 @@ public class ShootController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        swingAnimation = false;
+        swingAnimation = false;
         setShootSettingsWhenThouchPhaseEnded = true;
         playerController = FindObjectOfType<PlayerController>();
         positionToInstantiate = new Vector3(-7.59f, 7.44f, -0.9f);
@@ -48,28 +57,34 @@ public class ShootController : MonoBehaviour
         LogicPlane = 9;
         LogicPlaneMask = 1 << LogicPlane;
         LogicPlaneStartSwipeMask = 1 << LogicPlaneStartSwipe;
-        instantiatedSpear = Instantiate(newSpear, positionToInstantiate, Quaternion.identity) as GameObject;
+        instantiatedSpear = Instantiate(newSpear, spearPlace.transform.position, Quaternion.identity) as GameObject;
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!flying)
+        {
+            instantiatedSpear.transform.position = spearPlace.transform.position;
+        }
+
+
         if (instantiatedSpear.Equals(null))
         {
             flying = false;
-            instantiatedSpear = Instantiate(newSpear, positionToInstantiate, Quaternion.identity) as GameObject;
+            instantiatedSpear = Instantiate(newSpear, spearPlace.transform.position, Quaternion.identity) as GameObject;
         }
 
         if (flying)
         {
-            spearCanBeReleased = false;
+            instantiatedSpear.transform.Rotate(new Vector3(800,0,0)*Time.deltaTime);
             ShootSpear();
         }
 
         if (Input.touchCount > 0)
         {
-           // Debug.Log("a");
+            // Debug.Log("a");
             for (int i = 0; i < Input.touchCount; ++i)
             {
                 //Debug.Log("b");
@@ -81,57 +96,55 @@ public class ShootController : MonoBehaviour
                         checkRay = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
                         if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, LogicPlaneStartSwipeMask))
                         {
-                            Debug.Log("dfdf");
-                            Time.timeScale = 1;
-                            cameraCanSmoothlyMove = false;
-                            SetDirection();
-                            if (spearCanBeReleased == true) flying = true;
-                            playerController.aimingAvaliable = false;
-                            DestroySpear();
-                            setShootSettingsWhenThouchPhaseEnded = false;
-
+                            SetExitSettings();
                         }
                     }
-                    
                     if (playerController.aimingAvaliable && !flying)
                     {
-                      //  Debug.Log("d");
+                        //  Debug.Log("d");
                         CastRay(i);
                         if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, LogicPlaneMask))
                         {
+
+                            throwAnimationCanBePlayed = true;
+                            swingAnimation = true;
+                            instantiatedSpear.SetActive(true);
                             Time.timeScale = timeScale; //slow the game when you're aiming 
                             cameraCanSmoothlyMove = true;//move camera when you're aiming
                             spearCanBeReleased = true;
                             instantiatedSpear.transform.rotation = Quaternion.Euler(0f, 0f, SpearAngleRotation());
                             canCheckIfTouchIsOutOfAimingRange = true;
-                          // Debug.Log(SpearAngleRotation());
+                            // Debug.Log(SpearAngleRotation());
                         }
                     }
-                 
                 }
                 if (Input.GetTouch(i).phase == TouchPhase.Ended)
                 {
-                    if (setShootSettingsWhenThouchPhaseEnded)
-                    {
-                        Debug.Log("Settings");
-                        Time.timeScale = 1;
-                        cameraCanSmoothlyMove = false;
-                        SetDirection();
-                        if (spearCanBeReleased == true) flying = true;
-                        playerController.aimingAvaliable = false;
-                        DestroySpear();
-                    }else {
-                        setShootSettingsWhenThouchPhaseEnded = true;
-                    }
-                        canCheckIfTouchIsOutOfAimingRange = false;
-                    
-                    
-                }
+                    SetExitSettings();
+                    canCheckIfTouchIsOutOfAimingRange = false;
 
+                }
             }
         }
     }
 
+
+
+    void SetExitSettings()
+    {
+        if (throwAnimationCanBePlayed)
+        {
+            throwAnimation = true;
+            throwAnimationCanBePlayed = false;
+        }
+        Time.timeScale = 1;
+        SetDirection();
+        if (spearCanBeReleased == true) flying = true;
+        spearCanBeReleased = false;
+        playerController.aimingAvaliable = false;
+        DestroySpear();
+        setShootSettingsWhenThouchPhaseEnded = false;
+    }
 
     void SetDirection()
     {
@@ -155,12 +168,12 @@ public class ShootController : MonoBehaviour
         Vector3 second = new Vector3(worldSpaceHitInfo.x, playerController.firstTouchPosition.y, playerController.firstTouchPosition.z) - playerController.firstTouchPosition;
         angle = Vector3.Angle(first, second);
 
-        
+
 
         if (worldSpaceHitInfo.y >= playerController.firstTouchPosition.y) angle = -angle;
         return angle;
     }
-   private  void CastRay(int i)
+    private void CastRay(int i)
     {
         ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
     }

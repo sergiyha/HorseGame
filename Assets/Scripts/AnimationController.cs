@@ -5,6 +5,7 @@ public class AnimationController : MonoBehaviour
 {
     public Animator animator;
     private PlayerController playerController;
+    private ShootController shootController;
     public Transform horseCollider;
 
 
@@ -15,17 +16,21 @@ public class AnimationController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         playerController = FindObjectOfType<PlayerController>();
+        shootController = FindObjectOfType<ShootController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (shootController.swingAnimation)
         {
-            animator.SetTrigger("swing");
+            animator.SetBool("swingAnim", true);
+            shootController.swingAnimation = false;
         }
-        else if (Input.GetKeyUp(KeyCode.W))
+        else if (shootController.throwAnimation)
         {
+        shootController.throwAnimation = false;
+        animator.SetBool("swingAnim", false);
             animator.SetTrigger("throw");
         }
 
@@ -40,8 +45,8 @@ public class AnimationController : MonoBehaviour
     }
     public void resetSwingAnimation()
     {
-        animator.SetTrigger("resetThrow");
         animator.SetTrigger("resetSwing");
+        animator.SetTrigger("resetThrow");
         
     }
 }

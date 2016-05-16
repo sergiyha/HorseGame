@@ -123,7 +123,7 @@ public class PlayerController : MonoBehaviour
                         }
                         if (swipeValue > 0 && !isTouch && Grounded()&& Time.time > timeToNextJump)
                         {
-                            timeToNextJump = Time.time + 1.0f;
+                            timeToNextJump = Time.time + 1f;
                             enableJumpAnimation = true;
                             rb.velocity = new Vector3(0, rb.velocity.y + jumpSpeed, 0);
                             isTouch = true;
