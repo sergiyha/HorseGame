@@ -29,14 +29,14 @@ public class AnimationController : MonoBehaviour
         }
         else if (shootController.throwAnimation)
         {
-        shootController.throwAnimation = false;
-        animator.SetBool("swingAnim", false);
+            shootController.throwAnimation = false;
+            animator.SetBool("swingAnim", false);
             animator.SetTrigger("throw");
         }
 
         transform.position = horseCollider.position;
-       transform.rotation = Quaternion.Euler(-horseCollider.eulerAngles.z,transform.eulerAngles.y, transform.eulerAngles.z);
-        
+        transform.rotation = Quaternion.Euler(-horseCollider.eulerAngles.z, transform.eulerAngles.y, transform.eulerAngles.z);
+
         if (playerController.enableJumpAnimation)
         {
             animator.SetTrigger("Up");
@@ -47,6 +47,6 @@ public class AnimationController : MonoBehaviour
     {
         animator.SetTrigger("resetSwing");
         animator.SetTrigger("resetThrow");
-        
+
     }
 }

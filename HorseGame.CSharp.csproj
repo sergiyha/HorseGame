@@ -66,11 +66,19 @@
     <Compile Include="Assets\Scripts\AnimationController.cs" />
     <Compile Include="Assets\Scripts\BackgroundScroller.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\BgScript.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\KnightFidingAway.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\MenuEventController.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\SetColorLike.cs" />
+    <Compile Include="Assets\Scripts\MenuScripts\TextAnimationController.cs" />
     <Compile Include="Assets\Scripts\PlatformMover.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Restart.cs" />
     <Compile Include="Assets\Scripts\Settings.cs" />
     <Compile Include="Assets\Scripts\ShootController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Fonts\berlin_email\Creative Commons Lizenz.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
