@@ -8,10 +8,10 @@ public class BgScript : MonoBehaviour
     public Color startColor;
     public Color endColor;
     public Color currentColor;
-    public float duration ;
+    public float duration;
 
-  
-   
+
+
 
     Image image;
 
@@ -25,17 +25,17 @@ public class BgScript : MonoBehaviour
     void Update()
     {
 
-        SetColor();       
+        SetColor();
         image.color = currentColor;
     }
 
 
     void SetColor()
     {
-        currentColor = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time / duration, 1f));     
+        currentColor = Color.Lerp(startColor, endColor, Mathf.PingPong(Time.time / duration, 1f));
         currentColor.a = 1f;
 
     }
- 
+
 }
 

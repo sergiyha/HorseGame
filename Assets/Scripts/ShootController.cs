@@ -84,10 +84,8 @@ public class ShootController : MonoBehaviour
 
         if (Input.touchCount > 0)
         {
-            // Debug.Log("a");
             for (int i = 0; i < Input.touchCount; ++i)
             {
-                //Debug.Log("b");
                 if (Input.GetTouch(i).phase == TouchPhase.Moved)
                 {
                     if (canCheckIfTouchIsOutOfAimingRange)
@@ -101,7 +99,6 @@ public class ShootController : MonoBehaviour
                     }
                     if (playerController.aimingAvaliable && !flying)
                     {
-                        //  Debug.Log("d");
                         CastRay(i);
                         if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, LogicPlaneMask))
                         {
@@ -114,7 +111,6 @@ public class ShootController : MonoBehaviour
                             spearCanBeReleased = true;
                             instantiatedSpear.transform.rotation = Quaternion.Euler(0f, 0f, SpearAngleRotation());
                             canCheckIfTouchIsOutOfAimingRange = true;
-                            // Debug.Log(SpearAngleRotation());
                         }
                     }
                 }
@@ -163,7 +159,6 @@ public class ShootController : MonoBehaviour
         float angle;
 
         Vector3 worldSpaceHitInfo = hitInfo.point;
-        //Debug.Log(worldSpaceHitInfo);
         Vector3 first = worldSpaceHitInfo - playerController.firstTouchPosition;
         Vector3 second = new Vector3(worldSpaceHitInfo.x, playerController.firstTouchPosition.y, playerController.firstTouchPosition.z) - playerController.firstTouchPosition;
         angle = Vector3.Angle(first, second);

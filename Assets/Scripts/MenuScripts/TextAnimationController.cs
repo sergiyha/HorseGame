@@ -18,4 +18,12 @@ public class TextAnimationController : MonoBehaviour {
     {
         animator.SetTrigger("MoveText");
     }
+   public void MoveTextBackWard()
+    {
+        animator.SetTrigger("MoveTextBackWard");
+    }
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
